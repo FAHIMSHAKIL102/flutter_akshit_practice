@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_akshit_practice/dismissible_screen.dart';
 import 'package:flutter_akshit_practice/snackbar_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,6 +20,17 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: Text('SnackbarScreen'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DismissibleScreen()),
+                );
+              },
+              child: Text('DismissibleScreen'),
             ),
           ),
         ],
