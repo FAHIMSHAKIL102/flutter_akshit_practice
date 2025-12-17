@@ -18,6 +18,13 @@ class SnackbarScreen extends StatelessWidget {
               content: Text('Now See SnackBar', style: TextStyle(fontSize: 12)),
             );
             ScaffoldMessenger.of(context).showSnackBar(snackBar);
+            // ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            //   backgroundColor: Colors.grey,
+            //   duration: Duration(seconds: 1),
+            //   behavior: SnackBarBehavior.floating,
+            //   action: SnackBarAction(label: 'Undo', onPressed: () {}),
+            //   content: Text('Now See SnackBar', style: TextStyle(fontSize: 12)),
+            // ));
           },
           child: Text('Show SnackBar'),
         ),
