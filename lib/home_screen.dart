@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_akshit_practice/alert_dialog_screen.dart';
 import 'package:flutter_akshit_practice/cached_network_image_screen.dart';
 import 'package:flutter_akshit_practice/dismissible_screen.dart';
 import 'package:flutter_akshit_practice/drawer_widget_screen.dart';
@@ -60,6 +61,17 @@ class HomeScreen extends StatelessWidget {
                 'CachedNetworkImageScreen',
                 style: TextStyle(fontSize: 20),
               ),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AlertDialogScreen()),
+                );
+              },
+              child: Text('AlertDialogScreen', style: TextStyle(fontSize: 20)),
             ),
           ),
         ],
