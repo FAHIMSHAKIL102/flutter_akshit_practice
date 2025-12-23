@@ -6,6 +6,7 @@ import 'package:flutter_akshit_practice/bottom_sheet_screen.dart';
 import 'package:flutter_akshit_practice/cached_network_image_screen.dart';
 import 'package:flutter_akshit_practice/dismissible_screen.dart';
 import 'package:flutter_akshit_practice/drawer_widget_screen.dart';
+import 'package:flutter_akshit_practice/drop_down_screen.dart';
 import 'package:flutter_akshit_practice/snackbar_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -113,6 +114,17 @@ class HomeScreen extends StatelessWidget {
                 'BottomNavigationBarScreen',
                 style: TextStyle(fontSize: 20),
               ),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => DropDownScreen()),
+                );
+              },
+              child: Text('DropDownScreen', style: TextStyle(fontSize: 20)),
             ),
           ),
         ],
