@@ -9,6 +9,7 @@ import 'package:flutter_akshit_practice/drawer_widget_screen.dart';
 import 'package:flutter_akshit_practice/drop_down_screen.dart';
 import 'package:flutter_akshit_practice/form_screen.dart';
 import 'package:flutter_akshit_practice/snackbar_screen.dart';
+import 'package:flutter_akshit_practice/stack_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -137,6 +138,17 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: Text('FormScreen', style: TextStyle(fontSize: 20)),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => StackScreen()),
+                );
+              },
+              child: Text('StackScreen', style: TextStyle(fontSize: 20)),
             ),
           ),
         ],
