@@ -8,6 +8,7 @@ import 'package:flutter_akshit_practice/dismissible_screen.dart';
 import 'package:flutter_akshit_practice/drawer_widget_screen.dart';
 import 'package:flutter_akshit_practice/drop_down_screen.dart';
 import 'package:flutter_akshit_practice/form_screen.dart';
+import 'package:flutter_akshit_practice/geo_locator_screen.dart';
 import 'package:flutter_akshit_practice/image_picker_screen.dart';
 import 'package:flutter_akshit_practice/snackbar_screen.dart';
 import 'package:flutter_akshit_practice/stack_screen.dart';
@@ -173,6 +174,17 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: Text('ImagePickerScreen', style: TextStyle(fontSize: 20)),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => GeoLocatorScreen()),
+                );
+              },
+              child: Text('GeoLocatorScreen', style: TextStyle(fontSize: 20)),
             ),
           ),
         ],
