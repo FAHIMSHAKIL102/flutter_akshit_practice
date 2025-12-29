@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_akshit_practice/alert_dialog_screen.dart';
 import 'package:flutter_akshit_practice/animated_text_screen.dart';
+import 'package:flutter_akshit_practice/basic_ui_design_screen.dart';
 import 'package:flutter_akshit_practice/bottom_navigation_bar_screen.dart';
 import 'package:flutter_akshit_practice/bottom_sheet_screen.dart';
 import 'package:flutter_akshit_practice/cached_network_image_screen.dart';
@@ -185,6 +186,22 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: Text('GeoLocatorScreen', style: TextStyle(fontSize: 20)),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BasicUiDesignScreen(),
+                  ),
+                );
+              },
+              child: Text(
+                'BasicUiDesignScreen',
+                style: TextStyle(fontSize: 20),
+              ),
             ),
           ),
         ],
