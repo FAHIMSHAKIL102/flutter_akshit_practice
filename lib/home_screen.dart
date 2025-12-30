@@ -11,6 +11,7 @@ import 'package:flutter_akshit_practice/drop_down_screen.dart';
 import 'package:flutter_akshit_practice/form_screen.dart';
 import 'package:flutter_akshit_practice/geo_locator_screen.dart';
 import 'package:flutter_akshit_practice/image_picker_screen.dart';
+import 'package:flutter_akshit_practice/simple_Ui_design_screen.dart';
 import 'package:flutter_akshit_practice/snackbar_screen.dart';
 import 'package:flutter_akshit_practice/stack_screen.dart';
 import 'package:flutter_akshit_practice/tabBar_screen.dart';
@@ -200,6 +201,22 @@ class HomeScreen extends StatelessWidget {
               },
               child: Text(
                 'BasicUiDesignScreen',
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SimpleUiDesignScreen(),
+                  ),
+                );
+              },
+              child: Text(
+                'SimpleUiDesignScreen',
                 style: TextStyle(fontSize: 20),
               ),
             ),

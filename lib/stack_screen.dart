@@ -6,7 +6,7 @@ class StackScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('StckScreen')),
+      appBar: AppBar(title: Text('StackScreen')),
       body: Container(
         color: Colors.blue,
         child: Center(
